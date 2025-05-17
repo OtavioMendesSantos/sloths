@@ -1,4 +1,4 @@
-<h1 align="center">:file_cabinet: sloths_local</h1>
+<h1 align="center">:file_cabinet: sloths</h1>
 
 ## 📜 Descrição
 
