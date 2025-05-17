@@ -53,10 +53,50 @@ Os que se encaixarem estarão listados abaixo:
 <table>
   <tr>
     <td align="center">
+      <a href="https://github.com/otaviomendessantos">
+        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Otávio Mendes no GitHub"/><br>
+        <sub>
+          <b>otaviomendessantos</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
       <a href="https://github.com/judah-lopes">
         <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Judah Lopes no GitHub"/><br>
         <sub>
           <b>judah-lopes</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Matheuspsm12">
+        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Matheus Peixoto no GitHub"/><br>
+        <sub>
+          <b>Matheuspsm12</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Du-santana">
+        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Eduardo Santana no GitHub"/><br>
+        <sub>
+          <b>Du-santana</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/heriston">
+        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Heriston Davi no GitHub"/><br>
+        <sub>
+          <b>Heriston</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Lucas">
+        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Lucas Santos no GitHub"/><br>
+        <sub>
+          <b>Lucas</b>
         </sub>
       </a>
     </td>
