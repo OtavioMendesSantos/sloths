@@ -42,8 +42,56 @@ A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a e
 <br>
 
 ## 🗂️ Estrutura do projeto
-Em algumas matérias da formação, podem ser que os professores solicitem a realização de algum curso externo que mereça um repositório dedicado. 
-Os que se encaixarem estarão listados abaixo:
+Estrutura de Pastas MVC Atualizada para SLOTHS
+bash
+```bash
+/sloths                   ← pasta raiz do projeto
+├── /app
+│   ├── /config           ← config de banco, ambiente etc
+│   │   └── database.php
+│   ├── /controller       ← lógica que responde às requisições
+│   │   ├── AdminController.php
+│   │   ├── AuthController.php       ← login, logout, recuperar senha
+│   │   ├── CadastroController.php  ← cadastro de usuário
+│   │   ├── CalendarioController.php  ←
+│   │   ├── ConfigController.php  ←
+│   │   ├── HomeController.php  ← página principal do usuário com painel
+│   │   ├── LembreteController.php
+│   │   ├── LoginController.php
+│   │   ├── PerfilController.php
+│   │   └── PomodoroController.php
+│   ├── /model            ← classes que acessam o banco
+│   │   ├── Evento.php← eventos do calendário
+│   │   ├── Lembrete.php
+│   │   ├── Pomodoro.php
+│   │   └── Usuario.php                  ← eventos do calendário
+│   └── /views            ← arquivos que geram a interface (HTML + PHP)
+│       ├── /admin
+│       │   ├── lista_usuarios.php
+│       │   └── editar_usuario.php
+│       ├── /auth
+│       │   ├── cadastro.php
+│       │   ├── login.php
+│       │   └── recuperar_senha.php
+│       ├── /dashboard
+│       │   └── home.php              ← página principal do usuário (painel)
+│       ├── /pomodoro
+│       │   └── pomodoro.php
+│       ├── /lembrete
+│       │   └── lembrete.php
+│       ├── /calendario
+│       │   ├── calendario.php
+│       │   └── modal_editar.php       ← modal para editar eventos
+│       ├── /perfil
+│       │   └── perfil.php
+│       └── /configuracoes
+│           └── configuracoes.php
+├── /assets               ← arquivos estáticos: imagens, css, js frontend
+│   ├── /css
+│   ├── /js
+│   └── /images
+└── index.php               ← roteador principal
+```
 
 #### ☁️ Fundamentos de Computação em Nuvem 
 -> <a href="https://github.com/judah-lopes/aws_academy-cloud_foundations/tree/main">AWS Academy Cloud Foundations<a>
@@ -54,7 +102,7 @@ Os que se encaixarem estarão listados abaixo:
   <tr>
     <td align="center">
       <a href="https://github.com/otaviomendessantos">
-        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Otávio Mendes no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/145459372?v=4" width="100px;" alt="Foto de Otávio Mendes no GitHub"/><br>
         <sub>
           <b>otaviomendessantos</b>
         </sub>
@@ -70,7 +118,7 @@ Os que se encaixarem estarão listados abaixo:
     </td>
     <td align="center">
       <a href="https://github.com/Matheuspsm12">
-        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Matheus Peixoto no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/136357212?v=4" width="100px;" alt="Foto de Matheus Peixoto no GitHub"/><br>
         <sub>
           <b>Matheuspsm12</b>
         </sub>
@@ -78,7 +126,7 @@ Os que se encaixarem estarão listados abaixo:
     </td>
     <td align="center">
       <a href="https://github.com/Du-santana">
-        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Eduardo Santana no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/165734323?v=4" width="100px;" alt="Foto de Eduardo Santana no GitHub"/><br>
         <sub>
           <b>Du-santana</b>
         </sub>
@@ -93,8 +141,8 @@ Os que se encaixarem estarão listados abaixo:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Lucas">
-        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Lucas Santos no GitHub"/><br>
+      <a href="https://github.com/caslusant">
+        <img src="https://avatars.githubusercontent.com/u/125915251?v=4" width="100px;" alt="Foto de Lucas Santos no GitHub"/><br>
         <sub>
           <b>Lucas</b>
         </sub>
