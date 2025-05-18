@@ -133,8 +133,8 @@ bash
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/heriston">
-        <img src="https://avatars.githubusercontent.com/u/134812191?s=400&u=00a571215f2ea321a8738af235cea655e1e36ec6&v=4" width="100px;" alt="Foto de Heriston Davi no GitHub"/><br>
+      <a href="https://github.com/notsireh">
+        <img src="https://avatars.githubusercontent.com/u/183026024&v=4" width="100px;" alt="Foto de Heriston Davi no GitHub"/><br>
         <sub>
           <b>Heriston</b>
         </sub>
@@ -144,7 +144,7 @@ bash
       <a href="https://github.com/caslusant">
         <img src="https://avatars.githubusercontent.com/u/125915251?v=4" width="100px;" alt="Foto de Lucas Santos no GitHub"/><br>
         <sub>
-          <b>Lucas</b>
+          <b>caslusant</b>
         </sub>
       </a>
     </td>
