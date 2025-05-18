@@ -134,9 +134,9 @@ bash
     </td>
     <td align="center">
       <a href="https://github.com/notsireh">
-        <img src="https://avatars.githubusercontent.com/u/183026024&v=4" width="100px;" alt="Foto de Heriston Davi no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/183026024?v=4" width="100px;" alt="Foto de Heriston Davi no GitHub"/><br>
         <sub>
-          <b>Heriston</b>
+          <b>notsireh</b>
         </sub>
       </a>
     </td>
