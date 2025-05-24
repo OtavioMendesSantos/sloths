@@ -1,6 +1,9 @@
 <?php
+require_once __DIR__ . '/../utils/logConsole.php';
+
 // Função para carregar variáveis do .env
-function loadEnv($path) {
+function loadEnv($path)
+{
     if (!file_exists($path)) {
         throw new Exception(".env file not found at $path");
     }
@@ -15,7 +18,8 @@ function loadEnv($path) {
         $value = trim($value);
 
         if ((substr($value, 0, 1) === '"' && substr($value, -1) === '"') ||
-            (substr($value, 0, 1) === "'" && substr($value, -1) === "'")) {
+            (substr($value, 0, 1) === "'" && substr($value, -1) === "'")
+        ) {
             $value = substr($value, 1, -1);
         }
 
@@ -29,16 +33,18 @@ function loadEnv($path) {
 loadEnv(__DIR__ . '/../../.env');
 
 // Usa as variáveis de ambiente
+logConsole("Carregando variáveis de ambiente...");
 $host = $_ENV['DB_HOST'];
 $port = $_ENV['DB_PORT'];
 $user = $_ENV['DB_USER'];
 $password = $_ENV['DB_PASSWORD'];
-$database = $_ENV['DB_NAME'];
+$database = $_ENV['DB_DATABASE'];
 
 $conn = mysqli_connect($host, $user, $password, $database, $port);
 
 if (!$conn) {
+    logConsole("Falha na conexão: " . mysqli_connect_error());
     die("Falha na conexão: " . mysqli_connect_error());
 }
 
-echo "Conexão bem-sucedida!";
+logConsole("Conexão bem-sucedida!");

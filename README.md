@@ -9,6 +9,7 @@ Repositório dedicado ao desenvolvimento do Sloths. Um aplicativo de gerenciamen
 Documentar e salvar todos os arquivos e versionamentos do projeto afim de acompanhar o progresso e servir de documentação prática.
 
 ## :wrench: Tecnologias utilizadas
+
 <div>
    
    [![My Skills](https://skillicons.dev/icons?i=vscode,github,html,css,js,mysql,php)](https://skillicons.dev)  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg" width="48px;"/>
@@ -17,14 +18,15 @@ Documentar e salvar todos os arquivos e versionamentos do projeto afim de acompa
 ## 📝 Documentação
 
 A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a estrutura dos diretórios será feita assim:
+
 <div align="center">
  
    ![Captura de tela 2024-03-16 172506](https://github.com/judah-lopes/fac_senac-ads/assets/134812191/eeff1b46-ddcc-421c-8be2-c9759f9f072d)
    ###### Pasta principal > semestre > materias > atividades/aulas etc.
 </div>
 
-
 #### PADRÃO DE COMMITS
+
 <table>
   <tr>
     <td align="center">doc:</td>
@@ -42,8 +44,10 @@ A formação em ADS tem 2 anos de duração, sendo assim, 4 semestres. Logo, a e
 <br>
 
 ## 🗂️ Estrutura do projeto
+
 Estrutura de Pastas MVC Atualizada para SLOTHS
 bash
+
 ```bash
 /sloths                   ← pasta raiz do projeto
 ├── /app
@@ -92,9 +96,6 @@ bash
 │   └── /images
 └── index.php               ← roteador principal
 ```
-
-#### ☁️ Fundamentos de Computação em Nuvem 
--> <a href="https://github.com/judah-lopes/aws_academy-cloud_foundations/tree/main">AWS Academy Cloud Foundations<a>
 
 ## :handshake: Colaboradores
 
@@ -150,3 +151,106 @@ bash
     </td>
   </tr>
 </table>
+
+# 🤖 Como executar o projeto
+
+## Pré-requisitos
+
+- PHP 8.0 ou superior
+- MySQL 5.7 ou superior
+- Apache/Nginx (XAMPP recomendado)
+
+## Configuração do Ambiente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/OtavioMendesSantos/sloths.git
+cd sloths
+```
+
+2. Configure o banco de dados:
+
+   - Crie um banco de dados MySQL chamado `sloths`
+   - Importe o arquivo `database.sql` (se disponível) ou execute os comandos SQL necessários
+
+3. Configure as variáveis de ambiente:
+   - Crie um arquivo `.env` na raiz do projeto
+   - Copie o conteúdo do arquivo `.env.example`
+   - Preencha as variáveis com suas configurações:
+
+```env
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=seu_usuario
+DB_PASSWORD=sua_senha
+DB_DATABASE=sloths
+```
+
+4. Configure o servidor web:
+   - Se estiver usando XAMPP:
+     - Copie a pasta do projeto para `htdocs`
+     - Acesse através de `http://localhost/sloths`
+   - Se estiver usando outro servidor:
+     - Configure o DocumentRoot para apontar para a pasta do projeto
+     - Certifique-se que o mod_rewrite está habilitado
+
+## Estrutura do Banco de Dados
+
+Execute os comandos SQL disponíveis em `app/config/db.sql`.
+
+
+## Executando o Projeto
+
+1. Inicie seu servidor web (Apache) e MySQL
+2. Acesse o projeto através do navegador:
+
+   - Se usando XAMPP: `http://localhost/sloths`
+   - Se usando outro servidor: `http://seu-dominio/sloths`
+
+3. Crie um usuário de teste:
+   - Acesse a página de cadastro
+   - Preencha os dados necessários
+   - Faça login com as credenciais criadas
+
+## Estrutura de Diretórios
+
+O projeto segue o padrão MVC com a seguinte estrutura:
+
+```
+/sloths
+├── /app
+│   ├── /config
+│   ├── /controller
+│   ├── /model
+│   └── /views
+├── /assets
+└── index.php
+```
+
+## Troubleshooting
+
+Se encontrar problemas:
+
+1. Verifique se todas as extensões PHP necessárias estão habilitadas:
+
+   - mysqli
+   - pdo_mysql
+   - mbstring
+   - json
+
+2. Verifique as permissões dos diretórios:
+
+   - Certifique-se que o servidor web tem permissão de escrita nos diretórios necessários
+
+3. Verifique os logs de erro:
+   - Apache: `xampp/apache/logs/error.log`
+   - PHP: `php_error.log`
+
+## Contribuindo
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'feat: adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
