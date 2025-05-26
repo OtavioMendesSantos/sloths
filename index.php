@@ -27,8 +27,8 @@ switch ($page) {
         AuthController::recuperarSenha();
         break;
     case 'cadastro':
-        require 'app/controller/CadastroController.php';
-        CadastroController::cadastrar();
+        require 'app/controller/AuthController.php';
+        AuthController::register();
         break;
 
     // Requer usuário logado
@@ -46,7 +46,7 @@ switch ($page) {
         switch ($page) {
             case 'home':
                 require 'app/controller/HomeController.php';
-                DashboardController::mostrarPainel();
+                HomeController::mostrarPainel();
                 break;
             case 'pomodoro':
                 require 'app/controller/PomodoroController.php';
