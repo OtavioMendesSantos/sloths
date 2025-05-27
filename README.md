@@ -160,12 +160,7 @@ git clone https://github.com/OtavioMendesSantos/sloths.git
 cd sloths
 ```
 
-2. Configure o banco de dados:
-
-   - Crie um banco de dados MySQL chamado `sloths`
-   - Importe o arquivo `db.sql` (se disponível) ou execute os comandos SQL necessários
-
-3. Configure as variáveis de ambiente:
+2. Configure as variáveis de ambiente:
    - Crie um arquivo `.env` na raiz do projeto
    - Copie o conteúdo do arquivo `.env.example`
    - Preencha as variáveis com suas configurações:
@@ -178,7 +173,7 @@ DB_PASSWORD=sua_senha
 DB_DATABASE=sloths
 ```
 
-4. Configure o servidor web:
+3. Configure o servidor web:
    - Se estiver usando XAMPP:
      - Copie a pasta do projeto para `htdocs`
      - Acesse através de `http://localhost/sloths`
@@ -190,7 +185,7 @@ DB_DATABASE=sloths
 Execute os comandos SQL disponíveis em `app/config/db.sql`.
 
 ### - Executando o Projeto 🚀
-1. Inicie seu servidor web (Apache) e MySQL
+1. Inicie seu servidor web (Apache) e MySQL.
 2. Acesse o projeto através do navegador:
 
    - Se usando XAMPP: `http://localhost/sloths`
