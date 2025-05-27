@@ -1,9 +1,8 @@
-<?php
+<?php 
 require_once __DIR__ . '/../utils/logConsole.php';
 
 // Função para carregar variáveis do .env
-function loadEnv($path)
-{
+function loadEnv($path) {
     if (!file_exists($path)) {
         throw new Exception(".env file not found at $path");
     }
@@ -40,11 +39,13 @@ $user = $_ENV['DB_USER'];
 $password = $_ENV['DB_PASSWORD'];
 $database = $_ENV['DB_DATABASE'];
 
-$conn = mysqli_connect($host, $user, $password, $database, $port);
-
-if (!$conn) {
-    logConsole("Falha na conexão: " . mysqli_connect_error());
-    die("Falha na conexão: " . mysqli_connect_error());
+// Cria a conexão com PDO
+try {
+    $dsn = "mysql:host=$host;port=$port;dbname=$database;charset=utf8";
+    $pdo = new PDO($dsn, $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    logConsole("Conexão PDO bem-sucedida!");
+} catch (PDOException $e) {
+    logConsole("Erro na conexão PDO: " . $e->getMessage());
+    die("Erro na conexão com o banco de dados.");
 }
-
-logConsole("Conexão bem-sucedida!");
