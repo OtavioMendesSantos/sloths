@@ -101,8 +101,7 @@ A estrutura dos diretórios segue a arquitetura MVC
 │   │   └── db.sql                     ← comandos para as tabelas do projeto
 │   ├── /controller                 ← lógica que responde às requisições
 │   │   ├── AdminController.php        ← acesso de administrador (RUD)
-│   │   ├── AuthController.php         ← autenticação login/logout
-│   │   ├── CadastroController.php     ← cadastro/recuperar_senha 
+│   │   ├── AuthController.php         ← autenticação login/logout/cadastro/recuperar_senha
 │   │   ├── CalendarioController.php   ← calendario
 │   │   ├── ConfigController.php       ← página de configurações
 │   │   ├── HomeController.php         ← página principal (dashboard)
