@@ -15,7 +15,7 @@ class UserModel {
     }
 
     public function buscarPorEmail($email) {
-        $sql = "SELECT id, nome, email, senha FROM usuarios WHERE email = :email LIMIT 1";
+        $sql = "SELECT id, nome, email, senha, role FROM usuarios WHERE email = :email LIMIT 1";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute([':email' => $email]);
         return $stmt->fetch(PDO::FETCH_ASSOC);
@@ -63,6 +63,40 @@ class UserModel {
         }
 
         return false;
+    }
+
+    public function buscarTodos() {
+        $sql = "SELECT id, nome, email, role, data_cadastro FROM usuarios ORDER BY nome ASC";
+        $stmt = $this->conn->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function buscarPorId($id) {
+        $sql = "SELECT id, nome, email, role FROM usuarios WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute([':id' => $id]);
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function atualizarPorAdmin($id, $nome, $email, $role) {
+        $sql = "UPDATE usuarios SET nome = :nome, email = :email, role = :role WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([
+            ':nome' => $nome,
+            ':email' => $email,
+            ':role' => $role,
+            ':id' => $id
+        ]);
+    }
+
+    public function deletar($id) {
+        // Cuidado: não permita que o usuário se auto-delete para evitar travar a si mesmo fora da conta admin
+        if (isset($_SESSION['user_id']) && $id == $_SESSION['user_id']) {
+            return false;
+        }
+        $sql = "DELETE FROM usuarios WHERE id = :id";
+        $stmt = $this->conn->prepare($sql);
+        return $stmt->execute([':id' => $id]);
     }
 
 }

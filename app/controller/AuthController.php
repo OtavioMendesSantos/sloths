@@ -18,6 +18,7 @@ class AuthController {
                 $_SESSION['user_id'] = $usuario['id'];
                 $_SESSION['user_name'] = $usuario['nome'];
                 $_SESSION['user_email'] = $usuario['email'];
+                $_SESSION['role'] = $usuario['role']; // <-- ADICIONE ESTA LINHA
                 $_SESSION['logged_in'] = true;
                 header('Location: index.php?page=home');
             } else {
